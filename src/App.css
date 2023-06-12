@@ -1,0 +1,14 @@
+
+.converter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    color: aliceblue;
+}
+
+.converter__output {
+    min-width: 140px;
+    height: 35px;
+}
