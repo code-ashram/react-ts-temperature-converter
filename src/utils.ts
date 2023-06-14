@@ -1,5 +1,6 @@
-export const result = (unit: string, value: number): string => unit === 'C'
-    ? ((value - 32) * 5 / 9).toFixed(1)
-    : ((value * 9 / 5) + 32).toFixed(1)
+import {UNIT_CODE} from "./constants.ts";
 
-export const unitName = (unit: string): string => unit === 'C' ? "Fahrenheit" : "Celsius"
+export const convertTemperature = (unit: UNIT_CODE, value: number): string => (unit === UNIT_CODE.C
+    ? (value - 32) * 5 / 9
+    : (value * 9 / 5) + 32)
+    .toFixed(1)
